@@ -1,12 +1,9 @@
-/*
- * File: 9-times_table.c
- * Auth: Brennan D Baraban
- */
-
 #include "main.h"
+#include <stdio.h>
 
 /**
- * times_table - Prints the 9 times table, starting with 0.
+ * print_to_98 - print numbers n to 98
+ * @n: integer argument
  */
 
 void times_table(void)
@@ -22,13 +19,13 @@ void times_table(void)
 			_putchar(',');
 			_putchar(' ');
 
-			_putchar((prod % 10) + '0');
-
+	 		prod = num * mult;
+		
 			if (prod <= 9)
 				_putchar(' ');
 			else
 				_putchar((prod / 10) + '0');
-			
+
 			_putchar((prod % 10) + '0');
 		}
 		_putchar('\n');
