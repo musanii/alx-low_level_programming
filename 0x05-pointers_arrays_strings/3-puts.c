@@ -3,7 +3,7 @@
  * Author: Kevin Musanii
  */
 
-#include "main.c"
+#include "main.h"
 
 /**
  * _puts - Prints a string to stdout
