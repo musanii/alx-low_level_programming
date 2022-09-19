@@ -3,7 +3,7 @@
  * Author: Kevin Musanii
  */
 
-#include "4-main.c"
+#include "main.h"
 
 /**
  * print_rev - Prints a string in reverse
