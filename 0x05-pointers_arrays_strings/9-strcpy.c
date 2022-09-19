@@ -45,7 +45,7 @@ char *_strcpy(char *dest, char *src)
 	return (dest);
 }
 
-
+/*
 char *_strcpy(char *dest, char *src)
 {
         while (*src)
@@ -56,3 +56,4 @@ char *_strcpy(char *dest, char *src)
 	}
 	return (dest);
 }
+*/
