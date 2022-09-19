@@ -6,7 +6,7 @@
 #include "main.h"
 
 /**
- * puts2 -Prints a character and a new line 
+ * puts2 - Prints a character and a new line.
  * @str: The string containing characters
  */
 void puts2(char *str)
