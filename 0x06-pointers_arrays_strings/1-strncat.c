@@ -1,9 +1,9 @@
 /*
- * File: 1-strncat.c
- * Author: Kevin Musanii
- */
+* File: 1-strncat.c
+* Author: Kevin Musanii
+*/
  
- #include "main.h"
+#include "main.h"
  
 /**
  * _strncat - concatenate n bytes to destination string
@@ -13,7 +13,7 @@
  * Return: concatenated string
  */
  
- char *_strncat(char *dest, char *src, int n)
+char *_strncat(char *dest, char *src, int n)
 {
 	int i = 0;
 	int j = 0;
