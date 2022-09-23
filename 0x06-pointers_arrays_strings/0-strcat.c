@@ -1,16 +1,10 @@
-/*
- * File: 0-strcat.c
- * Author: Kevin Musanii
- */
-
 #include "main.h"
 
 /**
- * strcat - Concatenates the string pointed to by @src, including the terminating
- * null byte, to the end of the string pointed to by @dest.
- * @dest: A pointer to the string to be concatnated upon.
- *
- * Return: A pointer to the destination string @dest
+ * _strcat - concatnate or appends  the src string to the dest string.
+ * @dest: string to be appended to
+ * @src: string to append
+ * Return : concatnated string
  */
 
 char *_strcat(char *dest, char *src)
