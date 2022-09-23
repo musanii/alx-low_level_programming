@@ -1,3 +1,8 @@
+/*
+ * File: 5-string_toupper.c
+ * Auth: Kevin Musanii
+ */
+
 #include "main.h"
 
 /**
