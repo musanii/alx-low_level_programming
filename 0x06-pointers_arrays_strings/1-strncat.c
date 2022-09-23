@@ -4,7 +4,7 @@
 */
  
 #include "main.h"
- 
+
 /**
  * _strncat - concatenate n bytes to destination string
  * @dest: string to be appended to
@@ -12,7 +12,7 @@
  * @n: append n number of bytes(chars)
  * Return: concatenated string
  */
- 
+
 char *_strncat(char *dest, char *src, int n)
 {
 	int i = 0;
@@ -28,6 +28,6 @@ char *_strncat(char *dest, char *src, int n)
 		j++;
 	}
 	dest[i] = '\0';
-	
+
 	return (dest);
 }
