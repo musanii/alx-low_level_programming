@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * string_toupper - capitalize all letters in string.
+ * string_toupper - Capitalize all letters in string.
  * @s: The string to manipulate.
  *
  * Return: A string with all letters capitalized.
