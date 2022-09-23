@@ -5,7 +5,7 @@
  * @dest: A pointer to the string to be appended to.
  * @src: The string to append.
  *
- * Return : concatnated string
+ * Return : concatnated string.
  */
 
 char *_strcat(char *dest, char *src)
