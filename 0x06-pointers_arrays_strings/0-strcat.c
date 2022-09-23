@@ -12,16 +12,23 @@
  *
  * Return: A pointer to the destination string @dest
  */
-char *strcat(char *dest, const char *src)
+
+char *strcat(char *dest, char *src)
 {
-	int index = 0;
-	int dest_len = 0;
+	int i = 0;
+	int j = 0;
 
-	while (dest[index++])
-		dest_len++;
+	while (*(dest + i))
+		i++;
 
-	for (index = 0; src[index]; index++)
-		dest[dest_len++] = src[index];
+	while (*(src + j))
+	{
+		*(dest + i) = *(src + j);
+		i++;
+		j++;
+	}
+	*(dest + i) = '\0';
 
 	return (dest);
 }
+	
