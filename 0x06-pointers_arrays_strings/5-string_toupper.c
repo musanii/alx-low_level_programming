@@ -2,8 +2,9 @@
 
 /**
  * string_toupper - capitalize all letters in string.
- * @s: string to manipulate.
- * Return: string with all letters capitalized.
+ * @s: The string to manipulate.
+ *
+ * Return: A string with all letters capitalized.
  */
 
 char *string_toupper(char *s)
