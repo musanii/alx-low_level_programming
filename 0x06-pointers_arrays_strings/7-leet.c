@@ -1,11 +1,16 @@
+/*
+ * File: 7-leet.c
+ * Auth: Kevin Musanii
+ */
+
 #include "main.h"
 
 /**
- * leet - encode string into 1337 leet
- * @s: string to manipulate
- * Return: string
+ * leet - Encodes a string to 1337.
+ * @str: The string to be encoded.
+ *
+ * Return: A pointer to the encoded string.
  */
-
 char *leet(char *s)
 {
 
