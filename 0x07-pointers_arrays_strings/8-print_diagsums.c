@@ -6,6 +6,7 @@
  * integers.
  * @a: bad idea.
  * @size: the size of the the array.
+ *
  * Return: Nothing
  */
 void print_diagsums(int *a, int size)
