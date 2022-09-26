@@ -4,17 +4,17 @@
  * print_chessboard - print chessboard given set 2D array
  * @a: 2D array
  */
-
 void print_chessboard(char (*a)[8])
 {
+	unsigned int i, b;
 
-	int row;
-	int column;
-
-	for (row = 0; row < 8; row++)
+	for (i = 0 ; i < 8 ; i++)
 	{
-		for (column = 0; column < 8; column++)
-			_putchar(a[row][column]);
+		for (b = 0 ; b < 8 ; b++)
+		{
+			_putchar(*((*a + i * 8) + b));
+		}
 		_putchar('\n');
 	}
 }
+
