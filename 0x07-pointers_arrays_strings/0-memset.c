@@ -1,9 +1,3 @@
-
-/*
- * File: 0-memset.c
- * Auth: Kevin Musanii
- */
-
 #include "main.h"
 
 /**
@@ -17,15 +11,13 @@
  */
 char *_memset(char *s, char b, unsigned int n)
 {
+	unsigned int i;
 
-	int size = n; /* only accept positive sizes */
-
-	if (size > 0)
+	i = 0;
+	while (i < n)
 	{
-		int i;
-
-		for (i = 0; i < size; i++)
-			s[i] = b;
+		s[i] = b;
+		i++;
 	}
 
 	return (s);
