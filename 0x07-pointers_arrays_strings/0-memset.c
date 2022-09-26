@@ -1,4 +1,3 @@
-
 /*
  * File: 0-memset.c
  * Auth: Kevin Musanii
