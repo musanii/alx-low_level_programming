@@ -15,10 +15,10 @@
 
 int find_sqroot(int n, int root)
 {
-	if ( root * root > n)
+	if (root * root > n)
 		return(-1);
 
-	if ( root * root == n)
+	if (root * root == n)
 		return(root);
 
 	return(find_sqroot(n, root + 1));
