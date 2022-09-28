@@ -34,7 +34,7 @@ int find_sqroot(int n, int root)
 int _sqrt_recursion(int n)
 {
 	if ( n < 0)
-		return (-1);
+		return(-1);
 	
-	return (find_sqroot(n, 0));
+	return(find_sqroot(n, 0));
 }
