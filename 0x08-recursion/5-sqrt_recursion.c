@@ -13,7 +13,7 @@
  * Return: natural square root or -1 if not natural.
  */
 
-int find_sqroot(int n int root)
+int find_sqroot(int n, int root)
 {
 	if ( root * root > n)
 		return (-1);
