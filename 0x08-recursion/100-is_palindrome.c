@@ -23,7 +23,6 @@ int compare(char *head, char *tail)
  * @s: string
  * Return: length
  */
-
 int _strlen(char *s)
 {
 
@@ -32,13 +31,11 @@ int _strlen(char *s)
 	s++;
 	return (1 + (_strlen(s)));
 }
-
 /**
  * is_palindrome - check if palindrome
  * @s: string to check
  * Return: 1 if palindrome, 0 if not
  */
-
 int is_palindrome(char *s)
 {
 	int len = _strlen(s);
