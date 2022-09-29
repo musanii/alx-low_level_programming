@@ -1,9 +1,15 @@
+/*
+ * File: 100-is_palindrome.c
+ * Author: Kevin Musanii
+ */
+
 #include "main.h"
 
 /**
- * compare - compare head and tail indices for match
- * @head: index starting from left of string
- * @tail: index starting from right of string, moving backwards
+ * compare - compare head and tail indices for match.
+ * @head: index starting from left of string.
+ * @tail: index starting from right of string, moving backwards.
+ *
  * Return: 1 if palindrome, 0 if not
  */
 
