@@ -10,7 +10,7 @@
  * @s1: one string.
  * @s2: one string.
  * @after_wldcd: placeholder for position right after wildcard.
- * 
+ *
  * Return: 1 if matched, 0 if not.
  */
 
