@@ -1,8 +1,3 @@
-/*
- * File: 1-args.c
- * Author: Kevin Musanii
- */
-
 #include <stdio.h>
 #include "main.h"
 
