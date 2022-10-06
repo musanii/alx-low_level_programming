@@ -3,35 +3,38 @@
 #include "main.h"
 
 /**
- * _strdup - returns a pointer to a newly allocated space in memory,
- * which contains a copy of the string given as a parameter
- * @str: string to duplicate
- * Return: pointer to duplicated string in allocated memory
+ * alloc_grid - returns a pointer to a 2 dimensional array of integers
+ * @width: columns
+ * @height: rows
+ * Return: pointer to 2d array
  */
 
-char *_strdup(char *str)
+int **alloc_grid(int width, int height)
 {
-	char *duplicate_str;
-	int i = 0, len = 0;
+	int **grid;
+	int i, j;
 
-	if (str == NULL) /* validate str input */
+	if (width <= 0 || height <= 0) /* validate input */
 		return (NULL);
 
-	while (*(str + i))
-		len++, i++;
-	len++; /* add null terminator to length */
+	grid = malloc(height * sizeof(int *)); /*allocate memory for rows*/
 
-	duplicate_str = malloc(sizeof(char) * len); /* allocate memory */
-
-	if (duplicate_str == NULL) /* validate memory */
+	if (grid == NULL) /* validate memory */
 		return (NULL);
 
-	i = 0;
-	while (i < len)
+	for (i = 0; i < height; i++) /*allocate memory for columns of each row*/
 	{
-		*(duplicate_str + i) = *(str + i);
-		i++;
+		grid[i] = malloc(width * sizeof(int));
+		if (grid[i] == NULL) /* validate memory */
+		{
+			for (i = 0; i < height; i++)
+				free(grid[i]);
+			free(grid);
+			return (NULL);
+		}
+		for (j = 0; j < width; j++) /* set array values to 0 */
+			grid[i][j] = 0;
 	}
 
-	return (duplicate_str);
+	return (grid);
 }
