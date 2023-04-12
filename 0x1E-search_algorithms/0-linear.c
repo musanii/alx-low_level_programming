@@ -1,9 +1,4 @@
-
-/*
- * File: 0-linear.c
- * Author: Kevin Musanii
- */
-
+#include <stdio.h>
 #include "search_algos.h"
 
 /**
@@ -19,7 +14,7 @@
   * Description: Prints a value every time it is compared in the array.
   */
 
-int linear_search (int *array, size_t size,int value)
+int linear_search(int *array, size_t size,int value)
 {
 	if (array == NULL)
 	{
